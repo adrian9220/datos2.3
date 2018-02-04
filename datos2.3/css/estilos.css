@@ -1,0 +1,130 @@
+header{
+background-color: #5b7989;
+border-radius: 10px 10px 0px 0px;
+width: 100%;
+height: 95px
+}
+nav {
+position : absolute;
+width : 98%;
+background :#5b7989;
+}
+nav ul {
+margin : 0 ;
+list-style : none;
+}
+nav ul li {
+float :right;
+}
+nav ul li a {
+display :inline-block;
+margin-right : 1px;
+width : 50px;
+font-size : 14px;
+line-height : 30px;
+text-align : right;
+color : #ccc;
+}
+nav ul li a:hover {
+	text-decoration : none;
+color : #fff;
+}
+
+
+body {
+	background-color: black;
+}
+#contenido  {background: #82c3a6;
+}
+#contenido img, #contenido1 img{
+	max-width: 400px;
+  margin: 10px 10px 10px 10px;
+
+}
+.bloque1{
+	text-align: center;
+}
+#contenido1 {margin-bottom: 0px}
+
+#contenido1 , .imgWrapper3{
+	background: #d5c75f;
+}
+.bloque3 , .bloque4 {
+	columns: 3
+
+}
+.bloque2{
+	text-align: center;
+}
+#imagen2 , #imagen3 {
+width:400px;
+height: 350px;
+margin: 20px 20px 20px 20px;
+	}
+#imagen2:hover {
+-webkit-transform:rotate(10deg);transform:rotate(10deg);
+-webkit-box-shadow: 1px 1px 1px 1px #82c3a6;
+-webkit-transition: all 0.7s ease-out;
+}
+#imagen3:hover {
+	-webkit-box-shadow: 1px 1px 1px 1px #82c3a6;
+	-webkit-transform:translateY(-5px) translateX(20px);	transform:translateY(-5px) translateX(20px);
+	-webkit-transition: all 0.7s ease-out;
+
+}
+#imagen4 {
+	filter: grayscale(100%);
+
+}
+#imagen5 {
+	filter: blur(10px);
+}
+#imagen6{filter: sepia(100%)}
+.imgWrapper4, .imgWrapper3 {
+    font-size: 0;
+    text-align: center;
+}
+
+
+footer {
+	background: #c6d5c5;
+	border-radius:0px 0px 10px 10px;
+
+}
+
+main #pie2  {
+	list-style: none;
+columns: 4;
+margin-top: 0px;
+}
+
+ @media (min-width: 140px) and (max-width: 650px) {
+	 main #pie2  {
+	columns: 1
+	 }
+	 #contenido img , #contenido1 img{
+	 	width: 75%;
+		  }
+		#imagen2 , #imagen3
+		{width: 75%
+				}
+				.bloque3 , .bloque4 {
+					columns: 1
+
+				}
+}
+@media (min-width: 651px) and (max-width: 800px) {
+	main #pie2  {
+ columns: 2
+	}
+	#contenido img , #contenido1 img{
+	 width: 75%;
+		 }
+	 #imagen2 , #imagen3
+	 {width: 75%
+			 }
+			 .bloque3 , .bloque4 {
+				 columns: 2
+
+			 }
+}
